@@ -10,3 +10,7 @@ def hello_fnr():
 
 if __name__ == '__main__':
     instance.run()
+
+instance.route("/oh")
+def oh_world():
+    return "oh world"
