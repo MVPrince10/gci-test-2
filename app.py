@@ -8,9 +8,9 @@ instance = Flask(__name__)
 def hello_fnr():
     return "Goodbye World"
 
-if __name__ == '__main__':
-    instance.run()
-
 instance.route("/oh")
 def oh_world():
     return "oh world"
+
+if __name__ == '__main__':
+    instance.run()
